@@ -1,4 +1,9 @@
+#include "libft.h"
+
+void    ft_putchar(char c);
+
+
 int	main()
 {
-	printf("salut");
+    ft_putchar('a');
 }
