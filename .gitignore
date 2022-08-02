@@ -31,3 +31,6 @@ sites
 *.out
 *.app
 
+/CMakeFiles/
+/cmake-build-debug/
+/CMakeFiles/
