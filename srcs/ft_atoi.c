@@ -34,3 +34,5 @@ int ft_atoi(char *str)
 
     return (negative*nb);
 }
+
+int *ft_

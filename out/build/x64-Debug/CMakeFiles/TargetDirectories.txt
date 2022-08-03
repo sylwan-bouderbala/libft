@@ -1,4 +1,0 @@
-C:/Users/sylwa/test_code/ftlib/libft/out/build/x64-Debug/CMakeFiles/ft.dir
-C:/Users/sylwa/test_code/ftlib/libft/out/build/x64-Debug/CMakeFiles/tester.dir
-C:/Users/sylwa/test_code/ftlib/libft/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-C:/Users/sylwa/test_code/ftlib/libft/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

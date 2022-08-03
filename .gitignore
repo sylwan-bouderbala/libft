@@ -35,3 +35,4 @@ sites
 /cmake-build-debug/
 /CMakeFiles/
 cmake-build-vscode
+out
