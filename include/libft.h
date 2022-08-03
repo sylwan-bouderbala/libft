@@ -19,6 +19,8 @@
 # include "ft_tobinary.h"
 # include "ft_putchar.h"
 # include "ft_isspace.h"
+# include "ft_string.h"
+# include "ft_base.h"
 
 
 #endif

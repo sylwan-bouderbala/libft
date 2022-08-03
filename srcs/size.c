@@ -8,11 +8,17 @@ int	ft_intsize(int nb)
     int i;
 
     i = 1;
-    while(nb < 10)
+    if (nb < 0)
+    {
+        nb = -nb;
+        i ++;
+    }
+    while(nb > 10)
     {
         nb /= 10;
         i ++;
     }
+    return i;
 }
 
 int	ft_stringsize(char *str)
@@ -25,11 +31,22 @@ int	ft_stringsize(char *str)
     return n;
 }
 
-int	ft_intarraysize(int *tab)
+/*int	ft_intarraysize(int *tab)
 {
     int n;
 
+    n = 0;
     while(tab[n])
         n ++;
+    return n;
+}*/
+
+int ft_stringarraysize(char **str)
+{
+    int n;
+
+    n = 0;
+    while (str[n])
+        n++;
     return n;
 }

@@ -9,4 +9,5 @@
 int ft_atoi(char *str);
 
 int *ft_tabatoi(char **str);
+
 #endif //LIBFT_FT_ATOI_H

@@ -35,4 +35,14 @@ int ft_atoi(char *str)
     return (negative*nb);
 }
 
-int *ft_
+/*
+int *ft_tabatoi(char **str)
+{
+    int n;
+    int *ret;
+
+    n = 0;
+    while (*str)
+
+
+}*/
