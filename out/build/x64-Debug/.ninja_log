@@ -1,0 +1,7 @@
+# ninja log v5
+12	238	6811492389106485	CMakeFiles/ft.dir/srcs/size.c.obj	60d419e092fb2646
+0	61	6811493165871925	CMakeFiles/ft.dir/srcs/ft_putchar.c.obj	37e4ac62d4b4ffe6
+5	64	6811493165906307	CMakeFiles/ft.dir/srcs/ft_tobinary.c.obj	b5df9891c3e886f8
+8	71	6811493165961385	CMakeFiles/tester.dir/main.c.obj	38bedcd6b21785aa
+65	138	6811493166625721	ft.lib	705e78112ea2a140
+138	808	6811493169205766	tester.exe	880014f0a97e3485
