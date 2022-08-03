@@ -2,7 +2,7 @@
 #ifndef LIB_FT_H
 # define LIB_FT_H
 
-# ifdef __WIN32
+# ifdef _WIN32
 # include <io.h>
 # define write _write
 # else

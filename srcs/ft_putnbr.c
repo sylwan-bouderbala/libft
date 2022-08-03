@@ -6,12 +6,12 @@
 
 void    ft_putnbr(int nb)
 {
-    if  (nb < 0)
+    if (nb < 0)
     {
         ft_putchar('-');
-        nb = -nb;
+        ft_putnbr(-nb);
     }
-    if (nb <= 9)
+    else if (nb <= 9)
     {
         ft_putchar(nb + '0');
 

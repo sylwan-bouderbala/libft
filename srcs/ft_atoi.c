@@ -6,9 +6,10 @@
 
 int ft_atoi(char *str)
 {
-    int size = ft_stringsize(str);
     int negative = 1;
     int    nb;
+    nb = 0;
+
     while (*str != '\0' && ft_isspace(*str))
         str ++;
     if (*str == '\0')
@@ -25,11 +26,11 @@ int ft_atoi(char *str)
 
     }
 
-    while (*str >= 0 && *str <= 9)
+    while (*str >= '0' && *str <= '9')
     {
-        nb = nb * 10 + *str + '0';
+        nb = nb * 10 + *str - '0';
         str ++;
     }
 
-    return nb;
+    return (negative*nb);
 }
