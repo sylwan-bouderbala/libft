@@ -12,11 +12,13 @@ void    ft_putnbr(int nb)
         nb = -nb;
     }
     if (nb <= 9)
+    {
         ft_putchar(nb + '0');
 
+    }
     else
     {
-        ft_putnbr(nb/10);
-        ft_putchar( (nb%10)+'0');
+        ft_putnbr(nb / 10);
+        ft_putchar(nb % 10+ '0');
     }
 }
