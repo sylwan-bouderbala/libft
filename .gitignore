@@ -36,3 +36,6 @@ sites
 /CMakeFiles/
 cmake-build-vscode
 out
+
+main.c
+main.h
