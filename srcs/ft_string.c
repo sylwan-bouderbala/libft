@@ -23,7 +23,6 @@ char    *ft_strdup(char *str)
     ret [n] = '\0';
     return (ret);
 }
-
 char *ft_strcat(char *src1, char *src2)
 {
     int n;
@@ -41,4 +40,28 @@ char *ft_strcat(char *src1, char *src2)
         n ++;
     }
     src1[n] = '\0';
+    return src1;
+}
+
+char *ft_strcpy(char *src, char *dest)
+{
+    int n;
+
+    n = 0;
+    while(src[n] && dest[n])
+    {
+        dest[n]=src[n];
+        n++;
+    }
+    dest[n] = '\0';
+    return dest;
+}
+
+int ft_strcmp(char *str1, char *str2) {
+    while(*str1 == *str2 && *str1 != '\0' && *str2 != '\0')
+    {
+        str1 ++;
+        str2 ++;
+    }
+    return(*str1 - *str2);
 }
