@@ -3,7 +3,15 @@
 //
 
 #include "main.h"
-
+bool salut(int c, int v)
+{
+    if(c == v)
+    {
+        return true;
+    }
+    else
+        return false;
+}
 
 int main(int argc, char **argv)
 {
@@ -35,4 +43,10 @@ int main(int argc, char **argv)
         ft_putstr(" ");
         i ++;
     }*/
+    if(salut(1,1)==true)
+    {
+        ft_putstr("egaux");
+    }
+    else
+        ft_putstr("y a un pb frr");
 }
