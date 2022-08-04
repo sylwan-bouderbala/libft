@@ -3,3 +3,5 @@
 //
 
 #include "ft_string.h"
+
+char    *ft_strdup()
