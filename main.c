@@ -5,35 +5,18 @@
 #include "main.h"
 
 
-/*int	ft_intarraysize(char *tab)
+int main(int argc, char **argv)
 {
-    int n;
+    int i;
 
-    n = 0;
-    while(*tab)
+    i = 1;
+    while( i < argc)
     {
-        printf("tab[%d] : %c \n", n, tab[n]);
-        n ++;
-        tab ++;
+        ft_putstr(argv[i]);
+        ft_putchar(':');
+        ft_putstr(ft_strdup(argv[i]));
+        ft_putchar('\n');
+        i ++;
+
     }
-    return n;
-}*/
-
-int    main(int argc, char **argv)
-{
-    char tab[5] = "array";
-    int	n = 0;
-
-    while (tab[n])
-    {
-        _write(1,&tab[n],1);
-        n ++;
-    }
-
-
-    /*printf("string array : %d \n", ft_stringarraysize(argv));
-    printf("string size : %d \n", ft_stringsize("salut salut  "));
-    printf("int size : %d \n", ft_intsize(-321));
-    printf("int array size : %d \n", ft_intarraysize(tab));*/
-
 }

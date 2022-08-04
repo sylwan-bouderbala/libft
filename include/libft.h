@@ -21,6 +21,7 @@
 # include "ft_isspace.h"
 # include "ft_string.h"
 # include "ft_base.h"
+# include "string.h"
 
 
 #endif
