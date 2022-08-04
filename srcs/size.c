@@ -31,7 +31,7 @@ int	ft_stringsize(char *str)
     return n;
 }
 
-/*int	ft_intarraysize(int *tab)
+int	ft_intarraysize(int *tab)
 {
     int n;
 
@@ -39,7 +39,7 @@ int	ft_stringsize(char *str)
     while(tab[n])
         n ++;
     return n;
-}*/
+}
 
 int ft_stringarraysize(char **str)
 {
