@@ -1,0 +1,8 @@
+//
+// Created by sylwa on 05/08/2022.
+//
+
+#ifndef LIBFT_FT_FUNCTIONPOINTER_H
+#define LIBFT_FT_FUNCTIONPOINTER_H
+
+#endif //LIBFT_FT_FUNCTIONPOINTER_H

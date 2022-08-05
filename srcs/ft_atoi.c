@@ -23,7 +23,6 @@ int ft_atoi(char *str)
         }
         else
             str ++;
-
     }
 
     while (*str >= '0' && *str <= '9')

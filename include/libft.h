@@ -9,18 +9,19 @@
 # include <unistd.h>
 # endif
 
-#include <stdbool.h>
 #include <stdlib.h>
 
+# include "ft_bool.h"
 # include "ft_putnbr.h"
 # include "ft_putstr.h"
 # include "size.h"
 # include "ft_atoi.h"
 # include "ft_tobinary.h"
 # include "ft_putchar.h"
-# include "ft_isspace.h"
+# include "ft_is.h"
 # include "ft_string.h"
 # include "ft_base.h"
+# include "string.h"
 
 
 #endif
