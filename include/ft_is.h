@@ -8,6 +8,7 @@
 
 bool ft_isspace(char c);
 bool ft_isnubmer(char c);
+bool ft_isalpha(char c);
 
 bool ft_isincharset(char c, char *charset);
 

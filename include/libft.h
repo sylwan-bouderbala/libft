@@ -11,10 +11,11 @@
 
 #include <stdlib.h>
 
+#include "ft_functionpointer.h"
 # include "ft_bool.h"
 # include "ft_putnbr.h"
 # include "ft_putstr.h"
-# include "size.h"
+# include "ft_size.h"
 # include "ft_atoi.h"
 # include "ft_tobinary.h"
 # include "ft_putchar.h"

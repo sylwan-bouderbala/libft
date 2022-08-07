@@ -1,7 +1,7 @@
 //
 // Created by sylwa on 02/08/2022.
 //
-#include "size.h"
+#include "ft_size.h"
 
 int	ft_intsize(int nb)
 {
