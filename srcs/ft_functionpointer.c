@@ -32,6 +32,4 @@ char *ft_map(char *tableau, char (*f)(char))
     }
     ret[n] = '\0';
     return (&(ret[0]));
-
-
 }
