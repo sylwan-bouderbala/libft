@@ -1,4 +1,6 @@
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef LIB_FT_H
 # define LIB_FT_H
 
@@ -25,4 +27,7 @@
 # include "string.h"
 
 
+#endif
+#ifdef __cplusplus
+}
 #endif

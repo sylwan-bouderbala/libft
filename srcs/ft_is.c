@@ -4,33 +4,33 @@
 
 #include "ft_is.h"
 
-bool ft_isspace(char c)
+boolean ft_isspace(char c)
 {
     if (c == '\n' || c == '\t' || c == '\v' || c == '\f' || c == '\r' || c == ' ')
-        return true;
-    return false;
+        return True;
+    return False;
 }
 
-bool ft_isnumber(char c)
+boolean ft_isnumber(char c)
 {
     if (ft_isincharset(c,"1234567890"))
-        return true;
-    return false;
+        return True;
+    return False;
 }
-bool ft_isalpha(char c)
+boolean ft_isalpha(char c)
 {
     if (ft_isincharset(c,"abcdefghijklmnopqrstuvwxyz"))
-        return true;
-    return false;
+        return True;
+    return False;
 }
 
-bool ft_isincharset(char c, char *charset) {
+boolean ft_isincharset(char c, char *charset) {
     while(*charset != '\0')
     {
         if (c == *charset)
-            return true;
+            return True;
         else
             charset ++;
     }
-    return false;
+    return False;
 }

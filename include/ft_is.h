@@ -6,10 +6,10 @@
 #define LIBFT_FT_IS_H
 #include "libft.h"
 
-bool ft_isspace(char c);
-bool ft_isnubmer(char c);
-bool ft_isalpha(char c);
+boolean ft_isspace(char c);
+boolean ft_isnubmer(char c);
+boolean ft_isalpha(char c);
 
-bool ft_isincharset(char c, char *charset);
+boolean ft_isincharset(char c, char *charset);
 
 #endif //LIBFT_FT_IS_H
