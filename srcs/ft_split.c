@@ -20,9 +20,8 @@ char **ft_split(char *src, char *charset)
         if (*src!='\0')
             break;
         while (!ft_isincharset(*src,charset) && *src != '\0')
-        {
-            ft_strdup()
-        }
+            n ++;
+
     }
 
 }

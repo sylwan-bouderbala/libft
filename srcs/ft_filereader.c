@@ -3,3 +3,4 @@
 //
 
 #include "ft_filereader.h"
+//TODO: add a function that make a file a string
