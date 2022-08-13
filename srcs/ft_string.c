@@ -23,24 +23,20 @@ char    *ft_strdup(char *str)
     ret [n] = '\0';
     return (ret);
 }
-char *ft_strcat(char *src1, char *src2)
+char	*ft_strcat(char *dest, char *src)
 {
-    int n;
-    int i;
+    int		i;
+    char	*end_dest;
 
+    end_dest = dest + ft_stringsize(dest);
     i = 0;
-    n = 0;
-
-    while(src1[n])
-        n ++;
-    while(src2[i])
+    while (src[i] != '\0')
     {
-        src1[n] = src2[i];
-        i ++;
-        n ++;
+        end_dest[i] = src[i];
+        i++;
     }
-    src1[n] = '\0';
-    return src1;
+    end_dest[i] = '\0';
+    return (dest);
 }
 
 char *ft_strcpy(char *src, char *dest)
@@ -66,3 +62,48 @@ int ft_strcmp(char *str1, char *str2) {
     return(*str1 - *str2);
 }
 //TODO : strnduo
+
+char *ft_strndup(char *src, int n)
+{
+    char *ret;
+    int i;
+
+    i = 0;
+    ret = malloc(n * sizeof (char) +1);
+    if(!ret)
+        return NULL;
+    while(*src != '\0' && i < n)
+    {
+        ret[i] = *src;
+        src ++;
+        i ++;
+    }
+    ret[i] = '\0';
+    return ret;
+}
+
+char *ft_join(char **src,char *charset)
+{
+    int n;
+    int size;
+    char *ret;
+    size = 0;
+    n = 0;
+    int number_word;
+    number_word = ft_stringarraysize(src);
+    while (src[n])
+    {
+        size += ft_stringsize(src[n]);
+        n ++;
+    }
+    ret = malloc(size + 1);
+    if(!ret)
+        return NULL;
+    while (n < number_word)
+    {
+        ft_strcat(ret,src[n]);
+        ft_strcat(ret,charset);
+        n ++;
+    }
+    return ret;
+}

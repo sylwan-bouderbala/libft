@@ -13,6 +13,7 @@ extern "C" {
 
 #include <stdlib.h>
 
+#include "ft_split.h"
 #include "ft_functionpointer.h"
 # include "ft_bool.h"
 # include "ft_putnbr.h"
@@ -25,7 +26,7 @@ extern "C" {
 # include "ft_string.h"
 # include "ft_base.h"
 # include "string.h"
-
+# include "ft_diplaychar.h"
 
 #endif
 #ifdef __cplusplus
