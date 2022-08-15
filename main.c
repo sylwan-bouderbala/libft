@@ -70,6 +70,8 @@ char capitalize(char c)
 
 int main()
 {
-    char **a = ft_split("salutbcommentballezbvous","bd");
-    ft_putstr(a[3]);
+    char b[] = "salut";
+    char c[] = "bd";
+    char *d = ft_strcat(b,c);
+    ft_putstr(d);
 }

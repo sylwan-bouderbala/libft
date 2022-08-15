@@ -89,6 +89,7 @@ char *ft_join(char **src,char *charset)
     size = 0;
     n = 0;
     int number_word;
+    ft_putnbr(ft_stringarraysize(src));
     number_word = ft_stringarraysize(src);
     while (src[n])
     {
@@ -104,5 +105,6 @@ char *ft_join(char **src,char *charset)
         ft_strcat(ret,charset);
         n ++;
     }
+    ret[size+1] = '\0';
     return ret;
 }
