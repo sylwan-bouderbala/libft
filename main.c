@@ -68,10 +68,7 @@ char capitalize(char c)
 #include <stdlib.h>
 #include <stdio.h>
 
-int main()
+int main(int argc,char **argv)
 {
-    char b[] = "salut";
-    char c[] = "bd";
-    char *d = ft_strcat(b,c);
-    ft_putstr(d);
+    ft_putstr(ft_join(argv," "));
 }

@@ -81,30 +81,41 @@ char *ft_strndup(char *src, int n)
     return ret;
 }
 
-char *ft_join(char **src,char *charset)
+char *ft_join(char *src,char *charset)
 {
-    int n;
-    int size;
-    char *ret;
-    size = 0;
-    n = 0;
-    int number_word;
-    ft_putnbr(ft_stringarraysize(src));
-    number_word = ft_stringarraysize(src);
-    while (src[n])
-    {
-        size += ft_stringsize(src[n]);
-        n ++;
-    }
-    ret = malloc(size + 1);
-    if(!ret)
-        return NULL;
-    while (n < number_word)
-    {
-        ft_strcat(ret,src[n]);
-        ft_strcat(ret,charset);
-        n ++;
-    }
-    ret[size+1] = '\0';
-    return ret;
+    char	*neoscript;
+
+    if (!src || !charset)
+        return (NULL);
+    neoscript = ft_strnew(ft_stringsize((char*)src) + ft_stringsize((char*)charset));
+    if (!neoscript)
+        return (NULL);
+    ft_strcpy(neoscript, (char*)src);
+    ft_strcat(neoscript, (char*)charset);
+    return (neoscript);
+}
+char	*ft_strnew(size_t size)
+{
+    char	*neoscript;
+
+    neoscript = (char *)malloc((size + 1) * sizeof(char));
+    if (!neoscript)
+        return (NULL);
+    ft_bzero(neoscript, size + 1);
+    return (neoscript);
+}
+void	*ft_memset(void *b, int c, size_t len)
+{
+    unsigned char	*saf_b;
+
+    if (!b)
+        return (NULL);
+    saf_b = b;
+    while (len-- > 0)
+        *saf_b++ = (unsigned char)c;
+    return (b);
+}
+void	ft_bzero(void *s, size_t n)
+{
+    ft_memset(s, 0, n);
 }
