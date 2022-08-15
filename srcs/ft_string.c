@@ -61,7 +61,6 @@ int ft_strcmp(char *str1, char *str2) {
     }
     return(*str1 - *str2);
 }
-//TODO : strnduo
 
 char *ft_strndup(char *src, int n)
 {
@@ -69,7 +68,7 @@ char *ft_strndup(char *src, int n)
     int i;
 
     i = 0;
-    ret = malloc(n * sizeof (char) +1);
+    ret = malloc(n * sizeof (char) +2);
     if(!ret)
         return NULL;
     while(*src != '\0' && i < n)

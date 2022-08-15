@@ -10,23 +10,28 @@ char **ft_split(char *src, char *charset)
     char **ret;
     int n = 0;
 
-    ret = malloc((number_word + 1) * sizeof (char*));
-    if(!ret)
+    ret = malloc((number_word + 2) * sizeof (char*));
+    if(!ret){
         return NULL;
+    }
     int i = 0;
     while(i < number_word)
     {
         n = 0;
         while(ft_isincharset(*src,charset) && *src != '\0')
             src ++;
-        if (*src!='\0')
+        if (*src =='\0')
             break;
-        while (!ft_isincharset(*src,charset) && *src != '\0')
+        while (!(ft_isincharset(src[n],charset)) && src[n] != '\0')
+        {
             n ++;
-        ft_strndup(src,n);
+        }
+        ret [i]= ft_strndup(src,n);
+
         src = src + n;
         i ++;
     }
+    ret[i] == 0;
     return ret;
 }
 
@@ -41,9 +46,9 @@ int count_words(char *src, char *charset)
     {
         while (ft_isincharset(src[n],charset) && src[n]!='\0')
             n++;
-        if (src[n]!='\0')
+        if (src[n]=='\0')
             break;
-        while(!ft_isincharset(src[n],charset) && src[n]!='\0')
+        while(!(ft_isincharset(src[n],charset)) && src[n]!='\0')
         {
             n ++;
         }
