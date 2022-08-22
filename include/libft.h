@@ -27,6 +27,7 @@ extern "C" {
 # include "ft_base.h"
 # include "string.h"
 # include "ft_diplaychar.h"
+#include "ft_puttab.h"
 
 #endif
 #ifdef __cplusplus

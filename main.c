@@ -70,5 +70,8 @@ char capitalize(char c)
 
 int main(int argc,char **argv)
 {
-    ft_putstr(ft_join(argv," "));
+    char *charset = "1";
+    ft_putstr(ft_join(argv,charset));
+    ft_putnewline();
+    ft_putstr(ft_split(ft_join(argv,charset),"1")[0]);
 }

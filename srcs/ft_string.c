@@ -80,42 +80,34 @@ char *ft_strndup(char *src, int n)
     ret[i] = '\0';
     return ret;
 }
-
-char *ft_join(char *src,char *charset)
+//TODO : ft_join a des pb
+char *ft_join(char **src,char *charset)
 {
-    char	*neoscript;
-
-    if (!src || !charset)
-        return (NULL);
-    neoscript = ft_strnew(ft_stringsize((char*)src) + ft_stringsize((char*)charset));
-    if (!neoscript)
-        return (NULL);
-    ft_strcpy(neoscript, (char*)src);
-    ft_strcat(neoscript, (char*)charset);
-    return (neoscript);
-}
-char	*ft_strnew(size_t size)
-{
-    char	*neoscript;
-
-    neoscript = (char *)malloc((size + 1) * sizeof(char));
-    if (!neoscript)
-        return (NULL);
-    ft_bzero(neoscript, size + 1);
-    return (neoscript);
-}
-void	*ft_memset(void *b, int c, size_t len)
-{
-    unsigned char	*saf_b;
-
-    if (!b)
-        return (NULL);
-    saf_b = b;
-    while (len-- > 0)
-        *saf_b++ = (unsigned char)c;
-    return (b);
-}
-void	ft_bzero(void *s, size_t n)
-{
-    ft_memset(s, 0, n);
+    int number_word = 0;
+    int length = 0;
+    while(src[number_word])
+    {
+        number_word ++;
+    }
+    int n = 0;
+    while (src[n])
+    {
+        length += ft_stringsize(src[n]) ;
+        length += ft_stringsize(charset);
+        n ++;
+    }
+    char *ret = malloc(length + 1);
+    if (!ret)
+    {
+        return NULL;
+    }
+    n = 0;
+    while(n < number_word)
+    {
+        ret = ft_strcat(ret,src[n]);
+        ret = ft_strcat(ret,charset);
+        n ++;
+    }
+    ret [length] = '\0';
+    return ret;
 }
