@@ -80,7 +80,7 @@ char *ft_strndup(char *src, int n)
     ret[i] = '\0';
     return ret;
 }
-//TODO : ft_join a des pb
+
 char *ft_join(char **src,char *charset)
 {
     int number_word = 0;
@@ -109,5 +109,23 @@ char *ft_join(char **src,char *charset)
         n ++;
     }
     ret [length] = '\0';
+    return ret;
+}
+
+char *ft_newstring(char src[])
+{
+    int size = ft_stringsize(src);
+    int i = 0;
+    if ( size <= 0)
+        return NULL;
+    char *ret = malloc(size +1 );
+    if (!ret)
+        return NULL;
+    while(i < size)
+    {
+        ret[i] = src[i];
+        i ++;
+    }
+    ret [i] = '\0';
     return ret;
 }
