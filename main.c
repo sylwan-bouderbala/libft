@@ -70,16 +70,6 @@ char capitalize(char c)
 
 int main(int argc,char **argv)
 {
-    /*char *charset = "1";
-    ft_putstr(ft_join(argv,charset));
-    ft_putnewline();
-    ft_putstr(ft_split(ft_join(argv,charset),"1")[0]);
-    char *new_string = ft_newstring("salut salut");
-    ft_putnewline();
-    ft_putstr(new_string);
-    new_string[5]='c';
-    ft_putnewline();
-    ft_putstr(new_string);
-     */
+	ft_putstr("escroquerie");
 
 }
